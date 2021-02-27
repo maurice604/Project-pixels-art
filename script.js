@@ -46,3 +46,13 @@ for(let cont = 0; cont < quadrado.length; cont+=1){
 
     }
 }
+
+    function clear() {
+        let btnClear = document.querySelector('#clear-board');
+        btnClear.addEventListener('click', () => {
+            document.querySelectorAll('.pixel').forEach((item) => {
+                item.style.backgroundColor = 'white';
+            })
+        })
+    }
+    clear();
